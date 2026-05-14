@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calc">
+        <div class="outline">
+            <h3>Calculator</h3>
+            <div class="elements">
+                <table id="table">
+                    <tr id="row1">
+                        <td colspan="3"><input type="text" id="display_box"></td>
+                        <td><button id="ac" onclick="clear_box()">AC</button></td>
+                    </tr>
+                    <tr id="row2">
+                        <td><button onclick="display(1)">1</button></td>
+                        <td><button onclick="display(2)">2</button></td>
+                        <td><button  onclick="display(3)">3</button></td>
+                        <td><button id="plus" onclick="display('+')">+</button></td>
+                    </tr>
+
+                    <tr id="row3">
+                        <td><button onclick="display(4)">4</button></td>
+                        <td><button onclick="display(5)">5</button></td>
+                        <td><button onclick="display(6)">6</button></td>
+                        <td><button id="minus" onclick="display('-')">-</button></td>
+                    </tr>
+                    <tr id="row4">
+                        <td><button onclick="display(7)">7</button></td>
+                        <td><button onclick="display(8)">8</button></td>
+                        <td><button onclick="display(9)">9</button></td>
+                        <td><button id="multi" onclick="display('*')">*</button></td>
+                    </tr>
+                    <tr id="row5">
+                        <td><button id="slash" onclick="display('/')">/</button></td>
+                        <td><button onclick="display(0)">0</button></td>
+                        <td><button id="dot" onclick="display('.')">.</button></td>
+                        <td><button  id="res" onclick="result()">=</button></td>
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
